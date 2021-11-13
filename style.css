@@ -1,0 +1,568 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+/* FONT-FAMILY*/
+
+@font-face {
+    font-family: Badstue-Rock;
+    src: url(fonts/TRYVesterbro-Poster.otf);
+}
+
+@font-face {
+    font-family: footer;
+    src: url(fonts/TRYVesterbro-Regular.otf);
+}
+
+/*Burger menu styling | Same for all pages*/
+  
+  .navigation__checkbox {
+      display: none;
+  }
+  
+  .navigation__button {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 50%;
+      z-index: 300;
+      box-shadow: 0 1rem 3rem black;
+      cursor: pointer;
+  }
+  
+  .navigation__background {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background:white;
+      background-size: cover;
+      background-position: center;
+      z-index: 100;
+      transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .navigation__nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      opacity: 0;
+      width: 0;
+      visibility: hidden;
+      z-index: 200;
+      transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .navigation__list {
+      /*@include center;*/
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      list-style: none;
+  }
+  
+  .navigation__item {
+      margin: 1rem;
+  }
+  
+  .navigation__link:link,
+  .navigation__link:visited {
+      display: inline-block;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      color: black;
+      font-size: 2.4rem;
+      text-decoration: none;
+      transition: all .2s;
+  }
+  
+  .navigation__link span {
+      margin-right: 1.5rem;
+      display: inline-block;
+  }
+  
+  .navigation__link:hover {
+      color: #b90115;
+      transform: scale(1.1);
+  }
+  
+  .navigation__checkbox:checked~.navigation__background {
+      transform: scale(80)
+  }
+  
+  .navigation__checkbox:checked~.navigation__nav {
+      width: 100%;
+      visibility: visible;
+      opacity: 1;
+  }
+  
+  .navigation__icon {
+  
+      position: relative;
+      margin-top: 1.25rem;
+  }
+  
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+      display: inline-block;
+      width: 1.1rem;
+      height: 1px;
+      background-color: black;
+  }
+  
+  .navigation__icon::before,
+  .navigation__icon::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 200ms;
+  }
+  
+  .navigation__icon::before {
+      top: -.4rem;
+  }
+  
+  .navigation__icon::after {
+      top: .4rem;
+  }
+  
+  .navigation__button:hover .navigation__icon::before {
+      top: -0.5rem;
+  }
+  
+  .navigation__button:hover .navigation__icon::after {
+      top: 0.5rem;
+  }
+  
+  .navigation__checkbox:checked+.navigation__button .navigation__icon {
+      background-color: transparent;
+  }
+  
+  .navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+  }
+  
+  .navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+      top: 0;
+      transform: rotate(-135deg);
+  }
+
+@media screen and (min-width: 600px){
+    .navigation__checkbox:checked~.navigation__background {
+        transform: scale(150)
+    } 
+}
+
+/* FOOTER | SAME FOR ALL PAGES*/
+
+.footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0.77em;
+}
+.footersection1 {
+    display: flex;
+    flex-direction: column;
+}
+.footersection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer_container {
+    display: flex;
+    align-items: center;
+}
+.footer_heading {
+    text-decoration: none;
+    font-family: footer;
+    color: black;
+    font-size: 1.3em;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-decoration-line: none;
+}
+.footer_info {
+    color: black;
+    font-family: Oscine Regular;
+    font-size: 1em;
+    padding-left: 5px;
+}
+.someicons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.someicon {
+    width: 37px;
+}
+.contacticon {
+    width: 20px;
+}
+/* desktop version for the footer */
+@media only screen and (min-width: 600px){
+    .footer {
+        position: none;
+        justify-content: space-between;
+        padding-bottom: 1em;
+    }
+    .footersection1 {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .footersection2 {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .someicon {
+        width: 55px;
+    }
+    #socialmedia_heading {
+        margin-left: 47px;
+    }
+    #soc {
+        padding-right: 10px;
+    }
+}
+
+/* HEADER AND BODY STYLING */
+
+.title{
+    display: block;
+    font-family: Badstue-Rock;
+    color: white;
+    margin-left: 25px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+}
+
+.body-home{
+    background-image: url(images/backgroundmobile.png);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body{
+    background-color: black;
+}
+@media screen and (min-width: 600px) {
+    .body-home{
+        background-position: 20% 35%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .footer {
+        margin-top: auto;
+    }
+}
+
+/* HOME PAGE STYLING */
+
+.home-link{
+    text-decoration: none;
+    color: #ebd2b3;
+    font-size: 90%;
+    padding: 10px;
+}
+
+.div {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    width: 150px;
+    height: 37.5px;
+    clip-path: polygon(25% 0%, 100% 0%, 76% 100%, 0 100%);
+}
+
+.main{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30%;
+}
+
+.logo{
+    width: 300px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.3em;
+}
+.links-together{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.home-description {
+    display: none;
+}
+@media screen and (min-width: 600px){
+    .logo {
+        display: none;
+    }
+    .links-together {
+        display: none;
+    }
+    .main {
+        position: relative;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-description {
+        display: block;
+        color: #fff;
+        display: flex;
+        padding-top: 25em;
+    }
+    .description {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    /* ! possible solution for header !
+    .header {
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        padding-bottom: 1em;
+    } */
+
+}
+
+/* ABOUT PAGE STYLING */
+.sampletext {
+    color: white;
+}
+.paragraph-heading {
+    color: white;
+}
+.paragraph {
+    color: white;
+}
+@media screen and (min-width: 600px) {
+    .main-about {
+        position: relative;
+    }
+}
+/* MOVING VINYL NAVIGATION */
+.main-about {
+    display: flex;
+    flex-direction: column;
+}
+.vinylmenu_container {
+    display: flex;
+    padding-bottom: 30em;
+}
+.album_cover {
+    width: 300px;
+    z-index: 200;
+    position: absolute;
+    top: 8em;
+    left: -9em;
+}
+.vinyl_disc {
+    width: 298px;
+    z-index: 100;
+    position: absolute;
+    top: 4.7em;
+    left: 1em;
+    overflow: hidden;
+    position: absolute;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    }
+    @-moz-keyframes spin { 
+        100% { -moz-transform: rotate(360deg); } 
+    }
+    @-webkit-keyframes spin { 
+        100% { -webkit-transform: rotate(360deg); } 
+    }
+    @keyframes spin { 
+        100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    }
+}
+.disc {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+.vinyl_nav {
+    position: absolute;
+    z-index: 150;
+    top: 15em;
+    left: 13em;
+}
+.vinyl_nav {
+	-webkit-animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+	        animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+}
+.vinylnav_name {
+    color: red;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2021-11-13 15:27:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2021-11-13 15:52:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation focus-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+
