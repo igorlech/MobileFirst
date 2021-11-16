@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/aqr5dre.css">
-    <title>Badstue Rock</title>
+    <style>
+        @font-face {
+            font-family: TRYVesterbro-Poster;
+            src: url(fonts/TRYVesterbro-Poster.otf);
+        }
+    </style>
+    <title>Badstue Rock | SHOP</title>
 </head>
 <body class="body">
     <header class="header">
@@ -39,9 +45,83 @@
             </nav>
         </div>
     </header>
-
-
-
+    <main class="main-shop">
+        <!--For the mobile-->
+        <div class="vinylmenu_container">
+            <div class="cover">
+                <img src="images/fleetwood mac BW.png" alt="album cover" class="album_cover">
+            </div>
+            <div class="disc">
+                <img src="images/vinylstroke.png" alt="vinyl disc" class="vinyl_disc" class="slide-in-left">
+            </div>
+            <div class="weirdtext_container">
+                <h2 class="weirdtext">SHOP</h2>
+            </div>
+            <div class="vinyl_nav">
+                <a href="#giftcards"><h2 class="vinylnav_name_shop">Giftcards</h2></a>
+                <a href="https://www.discogs.com/"><h2 class="vinylnav_name_shop">Go to shop</h2></a>
+                <a href="#vinylcare"><h2 class="vinylnav_name_shop">Vinyl care</h2></a>
+            </div>
+        </div>
+        <!--For desktop-->
+        <div class="flipping-block">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="images/fleetwood400.png" alt="Velvet Underground cover" class="image">
+                    </div>
+                    <div class="back">
+                        <img src="images/vinylback.png" alt="vinyl back" class="image">
+                    <div class="flipping_nav">
+                        <a href="#giftcards"><h2 class="flippingnav_name">GIFTCARDS</h2></a>
+                        <a href="https://www.discogs.com/"><h2 class="flippingnav_name">GO TO SHOP</h2></a>
+                        <a href="#vinylcare"><h2 class="flippingnav_name">VINYL CARE</h2></a>
+                    </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="shop-main-content">
+            <h3 class="shop-heading" id="giftcards">Giftcards</h3>
+            <div class="giftcards_container">
+                <div class="list_container">
+                    <div class="list_product_arrow">
+                        <img src="images/leftarrow.png" alt="Arrow" class="arrow">
+                    </div>
+                    <div class="list_product_item">
+                        <img src="images/200krvinyl.png" alt="Giftcard" class="giftcard">
+                    </div>
+                    <div class="list_product_item">
+                        <img src="images/400krvinyl.png" alt="Giftcard" class="giftcard">
+                    </div>
+                    <div class="list_product_arrow">
+                        <img src="images/rightarrow.png" alt="Arrow" class="arrow">
+                    </div>
+                </div>
+            </div>
+            <h3 class="shop-heading" id="vinylcare">Vinyl care</h3>
+            <div class="vinylcare-first">
+                <div class="vinylcare_product_container">
+                    <img src="images/vinylbrush.png" alt="Vinyl brush" class="vinylcare_product">
+                    <p class="vinylcare_text">AM Vinyl brush</br>99kr</p>
+                </div>
+                <div class="vinylcare_product_container">
+                    <img src="images/recordcleaner.png" alt="Vinyl brush" class="vinylcare_product">
+                    <p class="vinylcare_text">AM Record cleaner</br>120kr</p>
+                </div>
+            </div>
+            <div class="vinylcare-second">
+                <div class="vinylcare_product_container">
+                    <img src="images/boxset.png" alt="Vinyl brush" class="vinylcare_product">
+                    <p class="vinylcare_text">AM Record cleaner box set</br>300kr</p>
+                </div>
+                <div class="vinylcare_product_container">
+                    <img src="images/sleeves.png" alt="Vinyl brush" class="vinylcare_product">
+                    <p class="vinylcare_text">Vinyl record sleeves</br>10 for 35kr</p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <section class="footersection1">
             <div class="footer_contact">

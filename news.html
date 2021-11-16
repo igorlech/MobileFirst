@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/aqr5dre.css">
-    <title>Badstue Rock</title>
+    <style>
+        @font-face {
+            font-family: TRYVesterbro-Poster;
+            src: url(fonts/TRYVesterbro-Poster.otf);
+        }
+    </style>
+    <title>Badstue Rock | NEWS</title>
 </head>
 <body class="body">
     <header class="header">
@@ -39,9 +45,58 @@
             </nav>
         </div>
     </header>
-
-
-
+    <main class="main-news">
+        <!--For the mobile-->
+        <div class="vinylmenu_container">
+            <div class="cover">
+                <img src="images/daftpunkbw.png" alt="album cover" class="album_cover">
+            </div>
+            <div class="disc">
+                <img src="images/vinylstroke.png" alt="vinyl disc" class="vinyl_disc" class="slide-in-left">
+            </div>
+            <div class="weirdtext_container">
+                <h2 class="weirdtext">NEWS</h2>
+            </div>
+            <div class="vinyl_nav_news">
+                <a href="#latest"><h2 class="vinylnav_name">Latest</h2></a>
+            </div>
+        </div>
+        <!--For desktop-->
+        <div class="flipping-block">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="images/daftpunk400.png" alt="Daft Punk cover" class="image">
+                    </div>
+                    <div class="back">
+                        <img src="images/vinylback.png" alt="vinyl back" class="image">
+                        <div class="flipping_nav">
+                            <a href="#latest"><h2 class="flippingnav_name">LATEST</h2></a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="news-main-content">
+            <h4 class="news_heading">Latest</h4>
+            <p class="news_subheading">New releases 5/11/2021</p>
+            <div class="video_container">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbadstuerock%2Fvideos%2F591771895420532%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <p class="news_subheading">New releases 28/10/2021</p>
+            <div class="video_container">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbadstuerock%2Fvideos%2F4305052576284176%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <p class="news_subheading">Announcment 28/10/2021</p>
+            <p class="news_text">New local theatre production!
+            </p>
+            <p class="news_text">Do yourself a favor and check out the play "The Man Who Burned". It is about Jackson C. Frank, whose story is wild and tragic, but who also enriched the world with an indescribably beautiful record. The play premieres tonight at Teater Katapult, and you can buy tickets <a href="www.katapult.dk" class="news_text_a">here</a></p>
+            <p class="news_subheading">New releases 29/09/2021</p>
+            <div class="video_container">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbadstuerock%2Fvideos%2F198111142421641%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <section class="footersection1">
             <div class="footer_contact">

@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/aqr5dre.css">
-    <title>Badstue Rock</title>
+    <title>Badstue Rock | EVENTS</title>
+    <style>
+        @font-face {
+            font-family: TRYVesterbro-Poster;
+            src: url(fonts/TRYVesterbro-Poster.otf);
+        }
+    </style>
 </head>
 <body class="body">
     <header class="header">
@@ -39,9 +45,140 @@
             </nav>
         </div>
     </header>
-
-    
-
+    <main class="main_events">
+        <!--For the mobile-->
+        <div class="vinylmenu_container">
+            <div class="cover">
+                <img src="images/velvetunderground bw.png" alt="album cover" class="album_cover">
+            </div>
+            <div class="disc">
+                <img src="images/vinylstroke.png" alt="vinyl disc" class="vinyl_disc" class="slide-in-left">
+            </div>
+            <div class="weirdtext_container">
+                <h2 class="weirdtext">EVENTS</h2>
+            </div>
+            <div class="vinyl_nav">
+                <a href="#in-store"><h2 class="vinylnav_name">In-store</h2></a>
+                <a href="#local"><h2 class="vinylnav_name">Local</h2></a>
+            </div>
+        </div>
+        <!--For desktop-->
+        <div class="flipping-block">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                   <img src="images/velvet400.png" alt="Velvet Underground cover" class="image">
+                    </div>
+                    <div class="back">
+                    <img src="images/vinylback.png" alt="vinyl back" class="image">
+                    <div class="flipping_nav">
+                        <a href="#in-store"><h2 class="flippingnav_name">IN-STORE</h2></a>
+                        <a href="#local"><h2 class="flippingnav_name">LOCAL</h2></a>
+                    </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="main-events-content">
+            <div class="events_div">
+                <h3 class="events_heading" id="in-store">In-store</h3>
+            </div>
+            <div class="events_div">
+                <h4 class="events_subheading">Upcoming events</h4>
+            </div>
+            <div class="events_div">
+                <div class="doubleevent">
+                    <div class="xclass">
+                        <div class="events_image_container">
+                            <img src="images/lars.png" alt="Lars" class="events_image">
+                        </div>
+                        <div class="events_text_container">
+                            <p class="events_text">17/11/21, 17:00</br>Lars H.U.G Meet & Greet and signing</br>@Badstue Rock Aarhus</p>
+                        </div>
+                    </div>
+                    <div class="blackdiv"></div>
+                </div>
+            </div>
+            <div class="events_div">
+                <h4 class="events_subheading">Past events</h4>
+            </div>
+            <div class="events_div">
+                <div class="doubleevent">
+                    <div class="singleevent2">
+                        <div class="events_image_container">
+                            <img src="images/lydmor.png" alt="Lydmor" class="events_image">
+                        </div>
+                        <div class="events_text_container">
+                            <p class="events_text">27/10/21, 20:00</br>Lydmør, in-store concert</br>@Badstue Rock Aarhus</p>
+                        </div>
+                    </div>
+                    <div class="singleevent2">
+                        <div class="events_image_container">
+                            <img src="images/trader.png" alt="Trader" class="events_image">
+                        </div>
+                        <div class="events_text_container">
+                            <p class="events_text">29/09/21, 20:00</br>TRADER, in-store concert</br>@Badstue Rock Aarhus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="events_div">
+                <div class="doubleevent">
+                    <div class="xclass">
+                        <div class="events_image_container">
+                            <img src="images/recorddrops.png" alt="Lars" class="events_image">
+                        </div>
+                        <div class="events_text_container">
+                            <p class="events_text">June 12 & July 17</br>Record Store Day</br>@Badstue Rock Aarhus</p>
+                        </div>
+                    </div>
+                    <div class="blackdiv2"></div>
+                </div>
+            </div>
+            <div class="events_div">
+                <h3 class="events_heading" id="local">Local</h3>
+            </div>
+            <div class="events_div">
+                <h4 class="events_subheading">Upcoming events</h4>
+            </div>
+            <div class="events_div">
+                <div class="doubleevent">
+                    <div class="xclass">
+                        <div class="events_image_container">
+                            <img src="images/livros.png" alt="Livros" class="events_image">
+                        </div>
+                        <div class="events_text_container">
+                            <p class="events_text">13/11/2021</br>LIVLØS</br>@Voxhall Live Music</p>
+                        </div>
+                    </div>
+                    <div class="blackdiv3"></div>
+                </div>
+            </div>
+            <div class="events_div">
+                <h4 class="events_subheading">Past events</h4>
+            </div>
+            <div class="events_div">
+                <div class="doubleevent">
+                    <div class="singleevent2">
+                        <div class="events_image_container">
+                            <img src="images/aarhusfair.jpg" alt="Aarhus Fair" class="events_image">
+                        </div>
+                        <div class="events_text_container">
+                            <p class="events_text">02/10/2021</br>Aarhus Record Fair</br>@Viby Biblioteket</p>
+                        </div>
+                    </div>
+                    <div class="singleevent2">
+                        <div class="events_image_container">
+                            <img src="images/aarhusfestuge.png" alt="Aarhus Festuge" class="events_image">
+                        </div>
+                        <div class="events_text_container">
+                            <p class="events_text">28/08 - 06/09 2021</br>Aarhus Fest Uge</br>@various locations around Aarhus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <section class="footersection1">
             <div class="footer_contact">
