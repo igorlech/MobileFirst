@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /contact/
+Allow: /about/
+Allow: /events/
+Allow: /shop/
+Allow: /news/
