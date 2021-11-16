@@ -295,7 +295,7 @@ a{
 /* HEADER AND BODY STYLING */
 
 .title{
-    display: block;
+    display: inline-flex;
     font-family: Badstue-Rock;
     color: white;
     margin-left: 25px;
@@ -305,7 +305,7 @@ a{
 }
 
 .body-home{
-    background-image: url(images/backgroundmobile.png);
+    background-image: url(images/compressedbackground.png);
     background-repeat: none;
     background-size: cover;
     background-attachment: fixed;
@@ -333,9 +333,10 @@ a{
 
 .home-link{
     text-decoration: none;
+    font-size: 25px ;
     color: #ebd2b3;
-    font-size: 90%;
     padding: 10px;
+    padding-top: 10px;
 }
 
 .div {
@@ -343,8 +344,8 @@ a{
     display: flex;
     justify-content: center;
     background-color:black;
-    width: 150px;
-    height: 37.5px;
+    width: 200px;
+    height: 50px;
     clip-path: polygon(25% 0%, 100% 0%, 76% 100%, 0 100%);
 }
 
@@ -354,7 +355,6 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30%;
 }
 
 .logo{
@@ -379,21 +379,20 @@ a{
 .logodesktop {
     display: none;
 }
+
 @media screen and (min-width: 600px){
     .logo {
         display: none;
     }
     .logodesktop {
         display: block;
-        width: 350px;
-        padding-top: 5em;
+        width: 450px;
     }
     .links-together {
         display: none;
     }
     .main {
         position: relative;
-        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -402,7 +401,7 @@ a{
         display: block;
         color: #fff;
         display: flex;
-        padding-top: 7em;
+        padding-top: 2em;
         padding-bottom: 5em;
     }
     .description {
@@ -421,21 +420,6 @@ a{
 
 }
 
-/* ABOUT PAGE STYLING */
-.sampletext {
-    color: white;
-}
-.paragraph-heading {
-    color: white;
-}
-.paragraph {
-    color: white;
-}
-@media screen and (min-width: 600px) {
-    .main-about {
-        position: relative;
-    }
-}
 /* MOVING VINYL NAVIGATION */
 .main-about {
     display: flex;
@@ -443,7 +427,7 @@ a{
 }
 .vinylmenu_container {
     display: flex;
-    padding-bottom: 30em;
+    padding-bottom: 25em;
 }
 .album_cover {
     width: 300px;
@@ -476,9 +460,12 @@ a{
         transform:rotate(360deg); 
     }
 }
+#vinyl_disc {
+    left: 0.2em;
+}
 .disc {
-	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
 .weirdtext {
     font-family: TRYVesterbro-Poster;
@@ -490,6 +477,12 @@ a{
     font-size: 3rem;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+}
+#weirdtext_shop {
+    top: 4.5em;
+}
+#weirdtext_contact {
+    top: 3.5em;
 }
 .vinyl_nav {
     position: absolute;
@@ -505,8 +498,8 @@ a{
 }
 .vinyl_nav,
 .vinyl_nav_news {
-	-webkit-animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
-	animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+	-webkit-animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+	animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
 }
 .vinylnav_name {
     color: rgb(202, 26, 26);
@@ -518,11 +511,11 @@ a{
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px rgb(255, 0, 119),
-    0 0 82px rgb(255, 0, 119),
-    0 0 92px rgb(255, 0, 119),
-    0 0 102px rgb(255, 0, 119),
-    0 0 151px rgb(255, 0, 119);
+    0 0 42px #ebd2b3,
+    0 0 82px #ebd2b3,
+    0 0 92px #ebd2b3,
+    0 0 102px #ebd2b3,
+    0 0 151px #ebd2b3;
 }
 .vinylnav_name_shop {
     color: rgb(202, 26, 26);
@@ -534,11 +527,11 @@ a{
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px rgb(255, 0, 119),
-    0 0 82px rgb(255, 0, 119),
-    0 0 92px rgb(255, 0, 119),
-    0 0 102px rgb(255, 0, 119),
-    0 0 151px rgb(255, 0, 119);
+    0 0 42px #ebd2b3,
+    0 0 82px #ebd2b3,
+    0 0 92px #ebd2b3,
+    0 0 102px #ebd2b3,
+    0 0 151px #ebd2b3;
 }
 .image{
     display: none;
@@ -622,7 +615,6 @@ a{
     }
   }
 
-/* 15.11 Igor changes */
 
 /* Media queries */
 @media screen and (min-width: 600px) {
@@ -756,8 +748,8 @@ a{
         animation-duration: 1s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
     }
       
       /* hide back of pane during swap */
@@ -800,9 +792,25 @@ a{
         z-index: 15;
         display: block;
     }
+    #flipping_nav_about {
+        top: 9em;
+        left: 6.5em;
+    }
+    #flipping_nav_events {
+        top: 9em;
+        left: 8em;
+    }
+    #flipping_nav_news {
+        top: 10.5em;
+        left: 9em;
+    }
+    #flipping_nav_contact {
+        top: 9em;
+        left: 8.5em;
+    }
     .flipping_nav {
-        -webkit-animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
-                animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+        -webkit-animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+        animation: focus-in-expand 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
     }
     .flippingnav_name {
         color: red;
@@ -894,6 +902,9 @@ a{
 }
 .news_subheading {
     color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1em;
     font-family: TRYVesterbro-Poster;
 }
 .news_text,
@@ -901,5 +912,236 @@ a{
     color: #fff;
     text-decoration: none;
     font-family: Oscine Regular;
+    font-size: 1.2rem;
+}
+.news_text {
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.news_text_a {
+    color: rgb(202, 26, 26);
+}
+.video_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.video {
+    height: 600px;
+    width: 300px;
+}
+@media screen and (min-width: 600px) {
+    .video {
+        height: 400px;
+        width: 600px;
+    }
+    .video_container {
+        padding-bottom: 6em;
+    }
+    .news_text {
+        padding-bottom: 3em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+/*  ABOUT PAGE STYLING */
+
+.main-about-content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.paragraph-heading-about{
+    color: #ebd2b3;
+    font-size: 2.5rem;
+    font-family: TRYVesterbro-Poster;
+}
+
+.last-paragraph-heading-about{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.paragraph-about-1 {
+    color: white;
+    font-family: Oscine Regular;
+    line-height: 22px;
+}
+
+.paragraph-about-2 {
+    color: white;
+    font-family: Oscine Regular;
+    line-height: 22px;
+}
+
+.images-about{
+    width: 100%;
+}
+
+.reference-about{
+    text-decoration: none;
+    color: #b90115;
+}
+
+.reference-about:hover{
+    color: lightgrey;
+}
+#image-about-2 {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .main-about {
+        position: relative;
+    }
+}
+/* FOR THE MAIN CONTENT OF PAGE ABOUT */
+
+@media screen and (min-width: 600px) {
+    .desktop-view{
+        display: flex;
+    }
+    .images-about{
+        width: 45%;
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .around-text-first{
+        display: flex;
+        align-items:flex-end;
+    }
+    .around-text-second{
+        display: flex;
+        align-items: top;
+    }
+    .paragraph-about-1{
+        text-align: right;
+        padding-right: 50px;
+    }
+    .second-photo-para2-about{
+        display: flex;
+        width: 50%;
+    }
+    .container-about {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "para1 photo2"
+          "photo1 photo2"
+          "photo1 para2"; 
+      }
+    .photo1 { grid-area: photo1; }
+    .para1 { grid-area: para1; }
+    .photo2 { grid-area: photo2; }
+    .para2 { grid-area: para2; }
+
+    .paragraph-about-2{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    #image-about{
+        float: right;
+        padding-right: 50px;
+    }
+    #image-about-2{
+        display: block;
+        padding-left: 50px;
+    }
+    #experience{
+        padding: 50px;
+    }
+
+}
+
+/* STYLING FOR THE CONTACT PAGE */
+
+    /* CONTACT FORM STYLING */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: Oscine Regular;
+}
+
+input[type=submit] {
+  background-color: #b90115;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: Oscine Regular;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container {
+  padding: 30px;
+}
+ 
+    /* REST OF THE PAGE STYLING */
+
+.title-contact{
+    color: #ebd2b3;
+    margin-left: 20px;
+    font-family: TRYVesterbro-Poster;
+    font-size: 30px;
+}
+
+.text-contact{
+    color: #fff;
+    margin-left: 30px;
+    font-family: Oscine Regular;
+    line-height: 25px;
+}
+
+#last{
+    padding-bottom: 40px;
+}
+
+#gmap_canvas{
+    width: 320px;
+    padding: 30px;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important
+}
+/* FOR DESKTOP VIEW */
+
+@media screen and (min-width: 600px){
+    .title-contact{
+        padding-left: 150px;
+    }
+    .text-contact{
+        display: flex;
+        justify-content: left;
+        padding-left: 250px;
+    }
+    .mapouter{
+        display: flex;
+        justify-content: center;
+    }
+    #gmap_canvas{
+        width: 60rem;
+        height: 35rem;
+    }
 }
 

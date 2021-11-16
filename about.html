@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/aqr5dre.css">
-    <title>Badstue Rock</title>
+    <title>Badstue Rock | ABOUT</title>
     <style>
         @font-face {
             font-family: TRYVesterbro-Poster;
             src: url(fonts/TRYVesterbro-Poster.otf);
         }
     </style>
+    <link rel="icon" href="images/favicon.ico" type="images/favicon.ico"/>
 </head>
 <body class="body">
     <header class="header">
@@ -46,30 +47,100 @@
         </div>
     </header>
     <main class="main-about">
+        <!-- For first part of mobile version -->
         <div class="vinylmenu_container">
             <div class="cover">
                 <img src="images/nirvanabw.png" alt="album cover" class="album_cover">
             </div>
             <div class="disc">
-                <img src="images/vinylstroke.png" alt="vinyl disc" class="vinyl_disc" class="slide-in-left">
+                <img src="images/vinylstroke.png" alt="vinyl disc" class="vinyl_disc" class="slide-in-left" id="vinyl_disc">
             </div>
             <div class="weirdtext_container">
                 <h2 class="weirdtext">ABOUT</h2>
             </div>
             <div class="vinyl_nav">
-                <a href="#"><h2 class="vinylnav_name">History</h2></a>
-                <a href="#"><h2 class="vinylnav_name">Experience</h2></a>
+                <a href="#history"><h2 class="vinylnav_name">History</h2></a>
+                <a href="#experience"><h2 class="vinylnav_name">Experience</h2></a>
+            </div>
+        </div>
+        <!-- For first part of desktop version-->
+        <div class="flipping-block">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                   <img src="images/nirvana.png" alt="nirvana" class="image">
+                    </div>
+                    <div class="back">
+                    <img src="images/vinylback.png" alt="vinyl back" class="image">
+                    <div class="flipping_nav" id="flipping_nav_about">
+                        <a href="#history"><h2 class="flippingnav_name">HISTORY</h2></a>
+                        <a href="#experience"><h2 class="flippingnav_name">EXPERIENCE</h2></a>
+                    </div>
+                    </div>
+                </div>    
             </div>
         </div>
         <div class="main-about-content">
-            <section class="content-section">
-                <h3 class="paragraph-heading">History</h3>
-                <p class="paragraph">Text</p>
+            <section class="content-section-about">
+                <h3 class="paragraph-heading-about" id="history">HISTORY</h3>
+                <br><br><br>
+                <div class="desktop-view">
+                    <div class="around-text-first">
+                    <p class="paragraph-about-1">
+                    Badstuerock is located in Badstuegade 22 in Aarhus’ latin quarter, and is one of Denmark's oldest still running independent record stores. The history of the latin quarter dates back to the 14th century, where originally laid viking fortifications are found. <br><br>
+                    Badstuerock opened its doors for the first time in 1973 with its original owner Mike D’Agustues.
+                    <br><br>
+                    </div>
+                </p>
+                <img src="images/badstuerock.jpg" alt="Shop" class="images-about">
+                <br><br>
+                </div>
+                <div class="desktop-view">
+                    <div class="around-text-second">
+                    <p class="paragraph-about-1">
+                    Mike, aged 22 at the time, had lived in a nearby street and created Badstuerock. He quickly procured stock by buying 19.000 kroner of used records from the Cambridge University Library and in addition contacted English record companies and bought anything they could acquire from records they liked. <br><br>
+                    Mike remembers an iconic moment in the early days of him ordering 600 copies of ‘Jimmy Cliffs; The Harder They Come’. Shortly after a lawsuit resulted in the end of production, so Badstuerock was virtually the only store in Europe that had stock of this record. <br><br>
+                    In 1999 Mike opened a second store ‘Dandelion’ which focused on selling records and Badstuerock to sell CD’s, then in 2007 closed 'Dandelion'. <br><br>
+                    Today's owner, Bjørn, has run Badstuerock since the departure of Mike - they had worked together at Badstuerock for 10 years prior.
+                    </p>
+                    <br><br>
+                    </div>
+                <img src="images/dandelion.jpg" alt="Dandelion" class="images-about">
+                </div>
+                </div>
             </section>
-            <section class="content-section">
-                <h3 class="paragraph-heading">Experience</h3>
-                <p class="paragraph">Text</p>
-                <p class="sampletext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, unde debitis. Quod eos aspernatur modi omnis exercitationem debitis, ea minus eum inventore optio est, nam magnam in natus nesciunt. Aperiam?</br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, unde debitis. Quod eos aspernatur modi omnis exercitationem debitis, ea minus eum inventore optio est, nam magnam in natus nesciunt. Aperiam?</br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, unde debitis. Quod eos aspernatur modi omnis exercitationem debitis, ea minus eum inventore optio est, nam magnam in natus nesciunt. Aperiam?</br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, unde debitis. Quod eos aspernatur modi omnis exercitationem debitis, ea minus eum inventore optio est, nam magnam in natus nesciunt. Aperiam?</br></p>
+            <section class="content-section-about">
+            <div class="main-about-content">
+                <br><br><br><br><br>
+                <h3 class="paragraph-heading-about" id="experience">EXPERIENCE</h3>
+                <br><br>
+                <div class="container-about">
+                    <div class="photo1">
+                        <img src="images/bjorn.jpg" alt="Owner" class="images-about" id="image-about">
+                    </div>
+                <br><br>
+                    <div class="para1">
+                        <p class="paragraph-about-2">
+                        Bjørn and Thomas welcome you to Badstuerock and look forward to helping you find the record or CD you desire. <br><br>
+                        Together they bring a vast amount of experience and knowledge only gained from many years of being passionate about music, then with a combined record store service of over 30 years. <br><br>
+                        With multiple thousand items of stock, they possibly have what you are looking for, if not they will happily answer any   question to make sure you have it in your collection.
+                        </p>
+                        <br><br>
+                    </div>
+                    <div class="para2">
+                        <h4 class="last-paragraph-heading-about paragraph-about-2" id="last-para-heading-about">INTERVIEW WITH BJØRN</h4>
+                        <br><br>
+                        <p class="paragraph-about-2" id="para-about-2">
+                        21/06/2018
+                        Daniel Skinbjer interviews Bjorn on his love of music and how he came to run Denmark's oldest running record store. Read more <a href="https://stiften.dk/artikel/min-passion-bjorn-lyden-er-byens-vinylpusher-det-begyndte-med-purple-rain-og-prince" class="reference-about">here</a>.
+                        </p>
+                        <br><br>
+                    </div>
+                    <div class="photo2">
+                        <img src="images/store2.jpg" alt="random-photo" class="second-photo-para2-about" id="image-about-2">
+                    </div>
+                </div>
+            </div>
             </section>
         </div>
     </main>
