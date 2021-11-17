@@ -269,7 +269,6 @@ a{
 /* desktop version for the footer */
 @media only screen and (min-width: 600px){
     .footer {
-        position: none;
         justify-content: space-between;
         padding-bottom: 1em;
     }
@@ -306,7 +305,6 @@ a{
 
 .body-home{
     background-image: url(images/compressedbackground.png);
-    background-repeat: none;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -407,6 +405,7 @@ a{
     .description {
         text-align: center;
         font-size: 1.5em;
+        font-family: Oscine Regular;
     }
     
     /* ! possible solution for header !
@@ -729,7 +728,7 @@ a{
       
     /* entire container, keeps perspective */
     .flip-container {
-        perspective: 1000;
+        perspective: 1000px;
     }
       
     .flip-container, .front, .back {
@@ -1047,7 +1046,6 @@ a{
     }
     .around-text-second{
         display: flex;
-        align-items: top;
     }
     .paragraph-about-1{
         text-align: right;
@@ -1079,10 +1077,12 @@ a{
     #image-about{
         float: right;
         padding-right: 50px;
+        width: 300px;
     }
     #image-about-2{
         display: block;
         padding-left: 50px;
+        width: 300px;
     }
     #experience{
         padding: 50px;
@@ -1172,4 +1172,12 @@ input[type=submit]:hover {
         width: 60rem;
         height: 35rem;
     }
+}
+
+/* google maps thing */
+
+#gmap_canvas {
+    border: 0px;
+    overflow: unset;
+    margin: 0;
 }
